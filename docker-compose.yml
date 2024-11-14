@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  django:
+    build:
+      context: ./Django
+      dockerfile: Dockerfile
+    container_name: django_app
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./Django:/app
+    environment:
+      - DEBUG=True
+    depends_on:
+      - react
+
+  react:
+    build:
+      context: ./React
+      dockerfile: Dockerfile
+    container_name: react_app
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./React:/app
