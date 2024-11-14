@@ -5,4 +5,4 @@ Scripts
 __pycache__
 db.sqlite3
 pyvenv.cfg
-media
+media/*
