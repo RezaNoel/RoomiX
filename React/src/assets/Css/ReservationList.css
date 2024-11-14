@@ -1,0 +1,34 @@
+.reservation-table {
+  direction: rtl;
+
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .reservation-table th,
+  .reservation-table td {
+    
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .reservation-table th {
+    
+    background-color: #f4f4f4;
+    font-weight: bold;
+  }
+  
+  .cancel-button {
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cancel-button:hover {
+    background-color: #e33c3f;
+  }
+  

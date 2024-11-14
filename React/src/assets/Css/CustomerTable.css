@@ -1,0 +1,63 @@
+.table-container {
+  padding: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-title {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 12px;
+  text-align: right;
+}
+
+.customer-table,
+.reservation-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: right;
+  margin-top: 8px;
+}
+
+.customer-table th,
+.customer-table td,
+.reservation-table th,
+.reservation-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.customer-table th,
+.reservation-table th {
+  background-color: #f5f5f5;
+  color: #555;
+  font-weight: bold;
+}
+
+.customer-table tr:nth-child(even),
+.reservation-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.current-guest {
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.guest-yes {
+  background-color: #d4edda;
+  color: #2a9d8f;
+}
+
+.guest-no {
+  background-color: #f8d7da;
+  color: #e63946;
+}
+
+.reservation-table {
+  width: 95%;
+  margin: 0 auto;
+}

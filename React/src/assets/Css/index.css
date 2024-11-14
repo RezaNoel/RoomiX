@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Vazirmatn');
+*{
+  font-family: 'Vazirmatn',Roboto,sans-serif;
+}
+body {
+  background-color: #f5f7f8;
+  margin: 0;
+  font-family: 'Vazirmatn',Roboto,sans-serif;
+  text-decoration: none !important;
+}
+.app {
+  display: flex;
+}
+#chart {
+  
+  width: 100%;
+  font-family: 'Vazirmatn',Roboto,sans-serif;
+
+}
+
+
+.sidebar {
+  
+  margin: 16px 16px 0 0;
+  font-size: 18px;
+  width: 16rem; /* عرض منو */
+  background-color: #1f2937; /* رنگ پس‌زمینه تیره */
+  height: 96vh; /* ارتفاع کامل صفحه */
+  color: white; /* رنگ متن سفید */
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  gap: 12px;
+  border-radius: 12px;
+  padding-inline: 16px;
+  background-color: #fff;
+  border: 1px #cfd8dc solid;
+  z-index: 15;
+}
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+  cursor: pointer;
+}
+
+.sidebar-item.selected {
+  background-color: #363636; /* رنگ پس‌زمینه برای آیتم انتخاب‌شده */
+  color: #fff;
+}
+
+.sidebar-item span {
+  margin-left: 8px;
+}
+.sidebar-item a {
+  text-decoration: none;
+}
+
+.sidebar h2 {
+  font-size: 1.25rem; /* اندازه فونت عنوان */
+  font-weight: bold;
+  padding: 1rem; /* فاصله داخلی */
+  color: #263238;
+  font-size: 16px;
+  text-align: center;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s; /* انیمیشن برای تغییر رنگ پس‌زمینه */
+  border-radius: 8px;
+  color: #607d8b;
+  margin-top: 6px;
+}
+
+.sidebar-item:hover {
+  background-color: #eff2f3; /* رنگ پس‌زمینه هنگام هاور */
+  color: #1f2937;
+}
+
+.sidebar-item.active {
+  background-color: #363636; /* رنگ پس‌زمینه برای آیتم انتخاب‌شده */
+  color: #fff;
+}
+
+.sidebar-item span {
+  margin-right: 1rem; /* فاصله بین آیکون و متن */
+}
+

@@ -1,0 +1,113 @@
+.confirmation-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+}
+
+.confirmation-page h3 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.reservation-summary {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.reservation-summary p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555;
+}
+
+.reservation-summary h4 {
+    font-size: 18px;
+    margin: 20px 0 10px;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.payment-option {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.payment-option label {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.payment-option input[type="radio"] {
+    margin-left: 10px;
+    accent-color: #04c227;
+    transform: scale(1.2);
+}
+
+.pay-button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #04c227;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pay-button:hover {
+    background-color: #00a336;
+}
+
+@media (max-width: 480px) {
+    .confirmation-page {
+        padding: 15px;
+    }
+
+    .reservation-summary {
+        padding: 15px;
+    }
+
+    .pay-button {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
+.credit-payment.disabled {
+    color: #bbb;
+    cursor: not-allowed;
+}
+
+.credit-payment.disabled input[type="radio"] {
+    cursor: not-allowed;
+}
+
+.credit-payment.disabled:hover::after {
+    content: "برای خرید اعتباری باید وارد شوید";
+    color: #ff0000;
+    font-size: 14px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    white-space: nowrap;
+}

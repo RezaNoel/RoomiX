@@ -1,0 +1,386 @@
+:root {
+    --primary-color: #ffb500;
+    --secondary-color: #f5f7f9;
+    --text-color: #000;
+    --light-text-color: #86898b;
+  }
+  .voucherContainer * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: right;
+  }
+  
+  hr {
+    border: none;
+    border-bottom: 1px solid var(--light-text-color);
+    margin: 1rem 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .voucherCard {
+      max-width: 600px;
+    }
+  
+    .ticketInfo {
+      grid-template-columns: 1fr;
+    }
+  
+    .roomInfo {
+      grid-template-columns: 1fr;
+    }
+  
+    .voucherHeader {
+      font-size: 1.2rem;
+    }
+  }
+  
+  .voucherRoot {
+    direction: rtl;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #363636;
+
+  }
+  
+  .voucherContainer {
+    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .voucherTag {
+    
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding-block: 1rem;
+  }
+  
+  .voucherCard {
+    margin: 0 100px;
+    /* width: 100%; */
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px ;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .voucherHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--secondary-color);
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 25px 25px 0 0;
+  }
+  
+  .headerLeft {
+    font-size: 0.9rem;
+    color: #666; /* رنگ متن سمت چپ */
+  }
+  
+  .headerRight {
+    display: flex;
+    align-items: center;
+  }
+  
+  .hotelBadge {
+    display: inline-block;
+    background-color: #ffb500; /* رنگ پس‌زمینه مربع */
+    color: white; /* رنگ متن */
+    font-size: 0.9rem; /* اندازه متن */
+    font-weight: bold; /* وزن متن */
+    padding: 0.2rem 0.5rem; /* فاصله داخل مربع */
+    border-radius: 4px; /* گوشه‌های گرد */
+    margin-right: 1rem; /* فاصله از اسم هتل */
+    text-align: center; /* متن وسط چین */
+  }
+  
+
+  
+  .ticketInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  
+  
+  .leaderInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .personInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  .hotelInfo {
+    display: flex;
+    flex-direction: column; /* ستون برای تیتر و خط */
+    gap: 1rem;
+  }
+  
+  .hotelInfoContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+
+  .hotelInfoContent p.fullWidth{
+    grid-column: span 2; /* آیتم تمام عرض */
+  }
+  
+  
+  .roomInfo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+    padding: 2rem;
+    border-top: 4px solid var(--primary-color);
+  }
+  
+  .priceSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .totalPrice,
+  .discountPrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .additionalInfo {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+  }
+  
+  .voucherActions {
+    padding: 100px;
+    /* margin: 50px; */
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  
+  .voucherButton {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .voucherButtonDownload {
+
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  
+  .voucherButtonDownload:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .voucherButtonShare {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+  }
+  
+  .voucherButtonShare:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+  }
+  .rulesSection {
+    /* margin: 2rem 0; */
+    padding: 0 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    direction: rtl;
+  }
+  
+  .rulesSection h3 {
+    /* font-size: 1rem; */
+    /* font-weight: bold; */
+    color: #333;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ffb500; /* خط زیر تیتر */
+    padding-bottom: 0.5rem;
+  }
+  
+  .rulesSection .rulePart,
+  .rulesSection .dynamicPart {
+    margin-bottom: 1rem;
+  }
+  .dynamicPart p {
+    white-space: pre-wrap; /* حفظ خطوط و شکستن متن در صورت نیاز */
+    word-wrap: break-word; /* شکستن کلمات طولانی */
+  }
+  .rulesSection .rulePart p,
+  .rulesSection .dynamicPart p {
+    font-size: 0.8rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+  }
+  
+
+  .rulesSection .rulePart p {
+    font-style: italic; /* استایل برای متن ثابت */
+  }
+  
+  .rulesSection .dynamicPart p {
+    font-weight: bold; /* استایل برای متن پویا */
+    color: #222;
+  }
+  
+  
+  /* General Reset within Voucher */
+  @media print {
+    /* مخفی کردن تیتر */
+    .voucherTag,
+    .voucherActions {
+      display: none;
+    }
+    .voucherHeader {
+      font-size: 1.1rem; /* کاهش اندازه متن برای چاپ */
+      padding: 0.5rem 1rem; /* کاهش فضای padding */
+    }
+  
+    .headerLeft {
+      font-size: 0.8rem; /* کاهش اندازه متن سمت چپ */
+    }
+  
+    .hotelBadge {
+      font-size: 0.8rem; /* کاهش اندازه مربع */
+      padding: 0.1rem 0.4rem; /* کاهش فضای داخلی مربع */
+      margin-right: 0.5rem; /* کاهش فاصله از اسم هتل */
+    }
+    @page {
+      margin: 0; /* حاشیه مناسب برای چاپ */
+    }
+  
+    body {
+      margin: 0;
+      padding: 0;
+      font-size: 12px; /* تنظیم فونت پایه برای چاپ */
+    }
+    /* مخفی کردن تاریخ، ساعت، عنوان صفحه و آدرس URL */
+   
+    header, footer {
+      display: none; /* مخفی کردن هدر و فوتر پیش‌فرض مرورگر */
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .voucherContainer {
+      max-width: 95vw; /* کاهش عرض فریم برای نمایش بهتر روی موبایل */
+      padding: 1rem;
+    }
+  
+    .voucherCard {
+      margin: 0;
+      /* padding: 1rem; */
+      border-radius: 15px;
+      box-shadow: none; /* کاهش سایه برای حفظ فضای نمایش */
+    }
+  
+    .voucherHeader {
+      border-radius: 15px 15px 0 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  
+    .headerLeft {
+      font-size: 0.8rem;
+    }
+  
+    .hotelBadge {
+      font-size: 0.7rem;
+      padding: 0.1rem 0.3rem;
+      margin-right: 0.3rem;
+    }
+  
+    .ticketInfo {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding: 1rem;
+    }
+  
+    .personInfo {
+      grid-template-columns: 1fr 1fr; /* تک‌ستونه برای حفظ ساختار روی موبایل */
+      gap: 0.5rem;
+    }
+    .hotelInfoContent{
+      gap: 0.5rem;
+    }
+  
+    .rulesSection {
+      padding: 1rem;
+    }
+  
+    .rulesSection h3 {
+      font-size: 0.9rem;
+    }
+  
+    .rulesSection p {
+      font-size: 0.75rem;
+    }
+  
+    .voucherActions {
+      flex-direction: column;
+      
+      padding: 1rem;
+    }
+    .roomInfo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    .voucherButton {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      padding: 0.75rem 1.5rem;
+    }
+  }
+  
+  

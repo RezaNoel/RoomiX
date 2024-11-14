@@ -1,0 +1,27 @@
+.chart-container {
+    display: flex;
+    justify-content: space-around;
+    direction: ltr;
+    padding: 16px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chart-item {
+    width: 100%;
+    direction: ltr;
+  }
+  .chart-container .apexcharts-series {
+    filter: blur(10px); 
+  }
+ 
+  .chart-container .apexcharts-yaxis-label,
+  .chart-container .apexcharts-xaxis-label {
+    filter: blur(5px); /* برچسب‌های محور را تار می‌کند */
+  }
+  
+  .chart-container .apexcharts-title-text {
+    filter: none; /* تیتر را بدون تغییر باقی می‌گذارد */
+  }
+  
